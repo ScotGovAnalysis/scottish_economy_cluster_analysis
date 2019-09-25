@@ -5,7 +5,7 @@ library(dplyr)
 library(shinydashboard)
 library(DT)
 
-#save.image(file = "cluster_data.RData")
+#run generate_louvain_cluster.R first!
 load("cluster_data.RData")
 
 cluster_data <- community_names
