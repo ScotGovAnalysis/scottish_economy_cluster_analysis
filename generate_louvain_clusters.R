@@ -27,3 +27,9 @@ community_names <- community %>%
   as.data.frame()
 
 colnames(community_names) <- c("cluster_id","sector")
+
+source("cluster_metric_functions")
+
+cluster_metrics <- calculate_louvain_fit(leon2,community_names)
+
+save.image(file = "cluster_data.RData")
