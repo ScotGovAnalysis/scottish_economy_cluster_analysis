@@ -1,4 +1,5 @@
 library(dplyr)
+library(tidyr)
 
 select_cluster_matrix <- function(matrix, cluster_names) {
    
