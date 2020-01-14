@@ -1,5 +1,7 @@
 library(dplyr)
 library(NetworkToolbox)
+#if networktoolbox not available, run next line
+#source("louvain.R")
 
 #load data
 leontief <- read.csv("./data/leon4_no_bad_data.csv")
